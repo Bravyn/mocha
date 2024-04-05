@@ -1,0 +1,47 @@
+
+nav {
+    background-color: rgb(255, 251, 0);
+    padding: 1 rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: rgb(84, 60, 60);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #470303;
+    letter-spacing: .2rem;
+}
+
+nav a:active {
+    color: #aaa;
+}
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+img{
+    width: 200px;
+}
+
+.image-container {
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
