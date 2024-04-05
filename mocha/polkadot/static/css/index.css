@@ -38,7 +38,7 @@ nav {
 }
 
 img{
-    width: 200px;
+    width: 400px;
 }
 
 .image-container {
@@ -53,5 +53,9 @@ section{
     }
 
 article{
-    height: 200px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    height: 400px;
 }
+
