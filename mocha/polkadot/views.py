@@ -10,3 +10,6 @@ def index_page(request):
     home_template = loader.get_template('index.html')
     return HttpResponse(home_template.render())
 
+def number(request, num):
+    
+    return HttpResponse(num)
