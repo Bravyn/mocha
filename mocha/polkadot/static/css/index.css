@@ -54,9 +54,9 @@ img {
 }
 
 section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,
-            minmax(200px, 1fr));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     overflow: hidden;
 }
 
