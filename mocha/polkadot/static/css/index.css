@@ -1,7 +1,10 @@
 
 nav {
-    background-color: rgb(255, 251, 0);
+    background-color: rgb(166, 166, 145);
     padding: 1 rem;
+}
+nav:hover{
+    background-color: chocolate;
 }
 
 nav ul {
@@ -19,8 +22,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #470303;
-    letter-spacing: .2rem;
+    color: #f2ebeb;
+    
 }
 
 nav a:active {

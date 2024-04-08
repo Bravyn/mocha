@@ -11,7 +11,7 @@ def index_page(request):
     return HttpResponse(home_template.render())
 
 def number(request, num):
-    if number == 12:
+    if num == 12:
         return HttpResponse("Welcome Commander, let's get started, shall we?")
     else:
         return HttpResponse("Your number is not in the system")
