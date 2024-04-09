@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
+from .forms import ImageForm
 
 # Create your views here.
 def hello(request):
@@ -16,3 +17,13 @@ def number(request, num):
         return HttpResponse(slides.render())
     else:
         return HttpResponse("Your number is not in the system")
+
+def upload_image(request):
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponse("Success")
+    else:
+        form = ImageForm()
+    return render(request, 'image_upload.html', {'form': form})
