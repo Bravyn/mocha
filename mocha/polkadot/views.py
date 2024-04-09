@@ -12,6 +12,7 @@ def index_page(request):
 
 def number(request, num):
     if num == 12:
-        return HttpResponse("Welcome Commander, let's get started, shall we?")
+        slides = loader.get_template("slides.html")
+        return HttpResponse(slides.render())
     else:
         return HttpResponse("Your number is not in the system")
