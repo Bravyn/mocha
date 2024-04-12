@@ -27,3 +27,7 @@ def upload_image(request):
     else:
         form = ImageForm()
     return render(request, 'image_upload.html', {'form': form})
+
+def services(request):
+    services_template = loader.get_template("services.html")
+    return HttpResponse(services_template.render())
