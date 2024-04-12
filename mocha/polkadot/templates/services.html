@@ -18,10 +18,20 @@
                 <a href="#"> Learn More</a>
             </div>
         </div>
+        <div class="divider">
+
+        </div>
+        
         <div class="main-section">
+            <h1>Dine without a worry</h1>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis accusantium, accusamus minima deserunt
             commodi temporibus optio, doloribus cumque possimus natus facere, odit suscipit aliquam quis rem. Quisquam
             pariatur dignissimos ex?
+        <div class="footer">
+            <img src = "{% static '/assets/m2.jpg' %}", alt = "footer image">
+            <img src = "{% static '/assets/m2.jpg' %}", alt = "footer image">
+
+        </div>
         </div>
 
     </div>
@@ -30,13 +40,17 @@
 
 </body>
 <style>
-    .container{
+    .container {
         display: flex;
-        align-items: center;
-        justify-content:space-around;
+        justify-content: space-between;
+
     }
+
+
     .card {
-        width: 300px;
+        margin-right: 20px;
+        width: 100%;
+        max-width: 300px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
@@ -62,6 +76,22 @@
     .card-content a {
         text-decoration: none;
         color: #007bff
+    }
+    .footer{
+        margin-top: 80px;
+        
+    }
+    .footer img{
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+        .card {
+            max-width: 100%;
+            /* Adjust maximum width for smaller screens */
+        }
     }
 </style>
 
