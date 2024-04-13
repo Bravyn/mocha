@@ -23,7 +23,8 @@ def upload_image(request):
         form = ImageForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return HttpResponse("Success")
+            success_page = loader.get_template("image_upload_success.html")
+            return HttpResponse(success_page.render())
     else:
         form = ImageForm()
     return render(request, 'image_upload.html', {'form': form})
